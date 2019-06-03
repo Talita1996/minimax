@@ -6,6 +6,7 @@ import os
 def main():
     os.system('cls')
     board = Hash()
+    print('----------------------\n   Seu símbolo é o X\n----------------------')
     board.get_board()
 
     while (1):
@@ -22,6 +23,7 @@ def main():
             break
 
         os.system('cls')
+        print('----------------------\n   Seu símbolo é o X\n----------------------')
         board.get_board()
 
 def finish(board):

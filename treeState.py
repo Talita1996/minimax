@@ -10,7 +10,7 @@ class TreeState(Hash):
     def set_next_states(self, symbol):
             for row in range(3):
                for column in range(3):
-                    if self.current_state.get_cell(row, column) == '*':
+                    if self.current_state.get_cell(row, column) == '-':
                         current_state_copy = copy.deepcopy(self.current_state)
                         current_state_copy.set_board(symbol, row, column)
                         tree_current_state = TreeState(current_state_copy)
