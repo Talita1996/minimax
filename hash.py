@@ -8,7 +8,7 @@ class Hash:
         self.board[i][j] = symbol
 
     def get_board(self):
-        print('     0 | 1 | 2 ')
+        print('\n     0 | 1 | 2 ')
         print('    ------------')
 
         for row in range(3):
