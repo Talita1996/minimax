@@ -1,8 +1,8 @@
 class Hash:
     def __init__(self):
-        self.board = [[0, 0, 0],
-                      [0, 0, 0],
-                      [0, 0, 0]]
+        self.board = [['*', '*', '*'],
+                      ['*', '*', '*'],
+                      ['*', '*', '*']]
 
     def set_board(self, symbol, i, j):
         self.board[i][j] = symbol
@@ -39,6 +39,6 @@ class Hash:
     def empty_cells(self):
         for row in range(3):
             for column in range(3):
-                if self.get_cell(row, column) == 0:
+                if self.get_cell(row, column) == '*':
                     return True
         return False
